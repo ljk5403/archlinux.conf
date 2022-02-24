@@ -94,3 +94,6 @@ endif
 
 "macro
 let @m = 'a $ $??ah'
+
+
+set clipboard+=unnamedplus

@@ -80,7 +80,6 @@ plugins=(
   zsh-autosuggestions
   python
   autoupdate
-
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -113,3 +112,15 @@ source $ZSH/oh-my-zsh.sh
 
 # User Add
 source ~/.profile
+
+# Frequently used functions
+fpath+=~/.zshfunctions
+for file in ~/.zshfunctions/*
+  autoload $file
+
+## For MOV -> mp4
+fpath+=~/.zshfunctions/ffmpeg_functions
+for file in ~/.zshfunctions/ffmpeg_functions/*
+  autoload $file
+
+eval $(thefuck --alias)
