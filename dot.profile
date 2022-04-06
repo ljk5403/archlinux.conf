@@ -9,7 +9,11 @@ alias myproxy='export http_proxy="127.0.0.1:8889";export https_proxy=$http_proxy
 alias unproxy='unset http_proxy https_proxy all_proxy'
 
 # Wine: wechat
-alias wc='/opt/apps/com.qq.weixin.deepin/files/run.sh'
+alias WCrun='/opt/apps/com.qq.weixin.deepin/files/run.sh'
 
 # sudo vim with env
 alias svim='sudo env HOME=$HOME vim'
+
+
+WCDir='/home/jiankunli/ApplicationData/WeChat Files/wxid_7he74yyvh54422/FileStorage/'
+alias wcfile='dolphin $WCDir/File/'

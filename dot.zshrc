@@ -1,3 +1,5 @@
+DISABLE_AUTO_UPDATE="true"
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -124,3 +126,5 @@ for file in ~/.zshfunctions/ffmpeg_functions/*
   autoload $file
 
 eval $(thefuck --alias)
+
+DISABLE_AUTO_UPDATE=true
