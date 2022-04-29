@@ -1,0 +1,245 @@
+[124407.859372] audit: type=1104 audit(1650981049.196:543): pid=162218 uid=1000 auid=1000 ses=2 msg='op=PAM:setcred grantors=pam_faillock,pam_permit,pam_faillock acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/6 res=success'
+[124421.004834] audit: type=1130 audit(1650981062.340:544): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=NetworkManager-dispatcher comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[124421.005482] wlan0: deauthenticating from 94:83:c4:00:41:54 by local choice (Reason: 3=DEAUTH_LEAVING)
+[124421.224013] PM: hibernation: hibernation entry
+[124421.260136] Filesystems sync: 0.003 seconds
+[124421.260139] Freezing user space processes ... (elapsed 0.002 seconds) done.
+[124421.262386] OOM killer disabled.
+[124421.262484] PM: hibernation: Marking nosave pages: [mem 0x00000000-0x00000fff]
+[124421.262486] PM: hibernation: Marking nosave pages: [mem 0x0009f000-0x000fffff]
+[124421.262487] PM: hibernation: Marking nosave pages: [mem 0x09f00000-0x09f0efff]
+[124421.262488] PM: hibernation: Marking nosave pages: [mem 0xb3d2c000-0xb3e3afff]
+[124421.262490] PM: hibernation: Marking nosave pages: [mem 0xb43ad000-0xb43adfff]
+[124421.262491] PM: hibernation: Marking nosave pages: [mem 0xb9b69000-0xbbd68fff]
+[124421.262533] PM: hibernation: Marking nosave pages: [mem 0xc9f7f000-0xcdffefff]
+[124421.262611] PM: hibernation: Marking nosave pages: [mem 0xce000000-0xffffffff]
+[124421.263210] PM: hibernation: Basic memory bitmaps created
+[124421.265482] PM: hibernation: Preallocating image memory
+[124433.982453] PM: hibernation: Allocated 1513081 pages for snapshot
+[124433.982458] PM: hibernation: Allocated 6052324 kbytes in 12.71 seconds (476.18 MB/s)
+[124433.982460] Freezing remaining freezable tasks ... (elapsed 0.001 seconds) done.
+[124433.984052] printk: Suspending console(s) (use no_console_suspend to debug)
+[124434.393705] [drm] free PSP TMR buffer
+[124434.421960] amdgpu 0000:06:00.0: amdgpu: MODE2 reset
+[124434.423618] ACPI: EC: interrupt blocked
+[124434.427228] ACPI: PM: Preparing to enter system sleep state S4
+[124434.444103] ACPI: EC: event blocked
+[124434.444104] ACPI: EC: EC stopped
+[124434.444105] ACPI: PM: Saving platform NVS memory
+[124434.458337] Disabling non-boot CPUs ...
+[124434.462037] smpboot: CPU 1 is now offline
+[124434.465584] smpboot: CPU 2 is now offline
+[124434.468123] smpboot: CPU 3 is now offline
+[124434.470509] smpboot: CPU 4 is now offline
+[124434.472743] smpboot: CPU 5 is now offline
+[124434.474918] smpboot: CPU 6 is now offline
+[124434.477827] smpboot: CPU 7 is now offline
+[124434.481219] smpboot: CPU 8 is now offline
+[124434.483641] smpboot: CPU 9 is now offline
+[124434.486227] smpboot: CPU 10 is now offline
+[124434.486880] Spectre V2 : Update user space SMT mitigation: STIBP off
+[124434.488293] smpboot: CPU 11 is now offline
+[124434.490325] PM: hibernation: Creating image:
+[124434.784701] PM: hibernation: Need to copy 1720226 pages
+[124434.784705] PM: hibernation: Normal pages needed: 1720226 + 1024, available pages: 2170069
+[124434.491300] ACPI: PM: Restoring platform NVS memory
+[124434.493513] ACPI: EC: EC started
+[124436.321982] ------------[ cut here ]------------
+[124436.321983] WARNING: CPU: 0 PID: 162262 at drivers/iommu/amd/init.c:851 amd_iommu_enable_interrupts+0x34d/0x420
+[124436.321991] Modules linked in: ccm rfcomm cmac algif_hash algif_skcipher af_alg bnep btusb btrtl btbcm vfat btintel intel_rapl_msr fat btmtk uvcvideo videobuf2_vmalloc bluetooth videobuf2_memops joydev mousedev videobuf2_v4l2 ecdh_generic videobuf2_common videodev intel_rapl_common think_lmi mc hid_multitouch firmware_attributes_class wmi_bmof iwlmvm edac_mce_amd snd_sof_amd_renoir kvm_amd snd_acp_config mac80211 snd_sof_amd_acp snd_sof_pci kvm snd_sof snd_hda_codec_realtek snd_hda_codec_generic snd_soc_acpi libarc4 snd_hda_codec_hdmi irqbypass ledtrig_audio crct10dif_pclmul crc32_pclmul snd_hda_intel ghash_clmulni_intel snd_soc_core snd_intel_dspcfg iwlwifi aesni_intel amdgpu snd_intel_sdw_acpi snd_compress ac97_bus snd_hda_codec crypto_simd iwlmei snd_pcm_dmaengine cryptd rapl wdat_wdt snd_hda_core sp5100_tco snd_pci_acp6x snd_hwdep zenpower(OE) i2c_piix4 ucsi_acpi cfg80211 snd_pcm tpm_crb snd_pci_acp5x typec_ucsi ideapad_laptop snd_timer tpm_tis snd_rn_pci_acp3x sparse_keymap
+[124436.322037]  gpu_sched typec snd_pci_acp3x snd tpm_tis_core platform_profile drm_ttm_helper ttm rfkill mei soundcore ccp r8168(OE) roles wmi video tpm i2c_hid_acpi i2c_hid rng_core mac_hid pinctrl_amd acpi_cpufreq pkcs8_key_parser crypto_user fuse acpi_call(OE) bpf_preload ip_tables x_tables ext4 crc32c_generic crc16 mbcache jbd2 serio_raw sdhci_pci atkbd cqhci libps2 nvme sdhci i8042 xhci_pci crc32c_intel nvme_core mmc_core xhci_pci_renesas serio
+[124436.322064] CPU: 0 PID: 162262 Comm: systemd-sleep Tainted: G S      W  OE     5.17.4-arch1-1 #1 bba05afeab01638bf5119bbe9f3f1f1452c88ff1
+[124436.322068] Hardware name: LENOVO 21A2/LNVNB161216, BIOS GQCN30WW(V1.16) 12/23/2021
+[124436.322069] RIP: 0010:amd_iommu_enable_interrupts+0x34d/0x420
+[124436.322071] Code: ff ff 49 8b 7f 18 89 04 24 e8 2f fe ed ff 8b 04 24 e9 4b fd ff ff 0f 0b 4d 8b 3f 49 81 ff 50 09 96 a4 0f 85 05 fd ff ff eb 96 <0f> 0b 4d 8b 3f 49 81 ff 50 09 96 a4 0f 85 f1 fc ff ff eb 82 31 f6
+[124436.322073] RSP: 0018:ffffb59f89ecfc48 EFLAGS: 00010046
+[124436.322075] RAX: 0000000b9a362551 RBX: 0000000000000000 RCX: 0000000000000000
+[124436.322076] RDX: 0000000000006067 RSI: 00000000000059ae RDI: 0000000b9a35c4ea
+[124436.322077] RBP: 0000000080000000 R08: 0000000000000000 R09: 000000000000000f
+[124436.322078] R10: 0000000000000001 R11: ffffffffffffffff R12: 000ffffffffffff8
+[124436.322079] R13: 0800000000000000 R14: ffffb59f89ecfc50 R15: ffff8ec2c004b000
+[124436.322080] FS:  00007fb5434d7e80(0000) GS:ffff8ec59ee00000(0000) knlGS:0000000000000000
+[124436.322081] CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033
+[124436.322082] CR2: 00007f39ec0029e6 CR3: 00000000933ea000 CR4: 0000000000750ef0
+[124436.322084] PKRU: 55555554
+[124436.322085] Call Trace:
+[124436.322087]  <TASK>
+[124436.322091]  ? cc_platform_has+0x4e/0x80
+[124436.322095]  ? memcpy_toio+0x1c/0xb0
+[124436.322100]  ? enable_iommus_v2+0x8e/0x130
+[124436.322101]  syscore_resume+0x4b/0x160
+[124436.322106]  hibernation_snapshot+0x236/0x490
+[124436.322110]  hibernate.cold+0x8b/0x1fb
+[124436.322114]  state_store+0xc9/0xd0
+[124436.322118]  kernfs_fop_write_iter+0x11c/0x1b0
+[124436.322122]  new_sync_write+0x15c/0x1f0
+[124436.322127]  vfs_write+0x1eb/0x280
+[124436.322129]  ksys_write+0x67/0xe0
+[124436.322131]  do_syscall_64+0x5c/0x80
+[124436.322135]  ? syscall_exit_to_user_mode+0x23/0x40
+[124436.322138]  ? do_syscall_64+0x69/0x80
+[124436.322139]  ? exc_page_fault+0x72/0x170
+[124436.322141]  entry_SYSCALL_64_after_hwframe+0x44/0xae
+[124436.322144] RIP: 0033:0x7fb543ecb257
+[124436.322150] Code: Unable to access opcode bytes at RIP 0x7fb543ecb22d.
+[124436.322151] RSP: 002b:00007ffdf8dd36c8 EFLAGS: 00000246 ORIG_RAX: 0000000000000001
+[124436.322153] RAX: ffffffffffffffda RBX: 0000000000000005 RCX: 00007fb543ecb257
+[124436.322153] RDX: 0000000000000005 RSI: 00007ffdf8dd37b0 RDI: 0000000000000004
+[124436.322154] RBP: 00007ffdf8dd37b0 R08: 0000560b429c5900 R09: 0000000000000000
+[124436.322155] R10: 0000000000000000 R11: 0000000000000246 R12: 0000000000000005
+[124436.322156] R13: 0000560b429c13c0 R14: 0000000000000005 R15: 00007fb543fc47a0
+[124436.322158]  </TASK>
+[124436.322158] ---[ end trace 0000000000000000 ]---
+[124436.322160] LVT offset 0 assigned for vector 0x400
+[124436.322698] Enabling non-boot CPUs ...
+[124436.322775] x86: Booting SMP configuration:
+[124436.322775] smpboot: Booting Node 0 Processor 1 APIC 0x1
+[124436.323455] microcode: CPU1: patch_level=0x0a50000c
+[124436.325809] ACPI: \_SB_.PLTF.C001: Found 3 idle states
+[124436.326059] Spectre V2 : Update user space SMT mitigation: STIBP always-on
+[124436.326082] CPU1 is up
+[124436.326146] smpboot: Booting Node 0 Processor 2 APIC 0x2
+[124436.326286] microcode: CPU2: patch_level=0x0a50000c
+[124436.328620] ACPI: \_SB_.PLTF.C002: Found 3 idle states
+[124436.328878] CPU2 is up
+[124436.328909] smpboot: Booting Node 0 Processor 3 APIC 0x3
+[124436.329052] microcode: CPU3: patch_level=0x0a50000c
+[124436.331298] ACPI: \_SB_.PLTF.C003: Found 3 idle states
+[124436.331606] CPU3 is up
+[124436.331635] smpboot: Booting Node 0 Processor 4 APIC 0x4
+[124436.332050] microcode: CPU4: patch_level=0x0a50000c
+[124436.334330] ACPI: \_SB_.PLTF.C004: Found 3 idle states
+[124436.334621] CPU4 is up
+[124436.334649] smpboot: Booting Node 0 Processor 5 APIC 0x5
+[124436.334785] microcode: CPU5: patch_level=0x0a50000c
+[124436.337032] ACPI: \_SB_.PLTF.C005: Found 3 idle states
+[124436.337324] CPU5 is up
+[124436.337347] smpboot: Booting Node 0 Processor 6 APIC 0x6
+[124436.337453] microcode: CPU6: patch_level=0x0a50000c
+[124436.339702] ACPI: \_SB_.PLTF.C006: Found 3 idle states
+[124436.339998] CPU6 is up
+[124436.340021] smpboot: Booting Node 0 Processor 7 APIC 0x7
+[124436.340127] microcode: CPU7: patch_level=0x0a50000c
+[124436.342359] ACPI: \_SB_.PLTF.C007: Found 3 idle states
+[124436.342708] CPU7 is up
+[124436.342730] smpboot: Booting Node 0 Processor 8 APIC 0x8
+[124436.342837] microcode: CPU8: patch_level=0x0a50000c
+[124436.345202] ACPI: \_SB_.PLTF.C008: Found 3 idle states
+[124436.345612] CPU8 is up
+[124436.345635] smpboot: Booting Node 0 Processor 9 APIC 0x9
+[124436.345751] microcode: CPU9: patch_level=0x0a50000c
+[124436.348107] ACPI: \_SB_.PLTF.C009: Found 3 idle states
+[124436.348689] CPU9 is up
+[124436.348726] smpboot: Booting Node 0 Processor 10 APIC 0xa
+[124436.348842] microcode: CPU10: patch_level=0x0a50000c
+[124436.351176] ACPI: \_SB_.PLTF.C00A: Found 3 idle states
+[124436.351650] CPU10 is up
+[124436.351673] smpboot: Booting Node 0 Processor 11 APIC 0xb
+[124436.351791] microcode: CPU11: patch_level=0x0a50000c
+[124436.354183] ACPI: \_SB_.PLTF.C00B: Found 3 idle states
+[124436.354791] CPU11 is up
+[124436.355977] ACPI: PM: Waking up from system sleep state S4
+[124436.362858] ACPI: EC: interrupt unblocked
+[124436.447823] ACPI: EC: event unblocked
+[124436.447959] pci 0000:00:00.2: can't derive routing for PCI INT A
+[124436.447962] pci 0000:00:00.2: PCI INT A: no GSI
+[124436.448156] usb usb1: root hub lost power or was reset
+[124436.448159] usb usb2: root hub lost power or was reset
+[124436.448159] usb usb3: root hub lost power or was reset
+[124436.448161] usb usb4: root hub lost power or was reset
+[124436.448430] [drm] PCIE GART of 1024M enabled.
+[124436.448431] [drm] PTB located at 0x000000F400900000
+[124436.448442] [drm] PSP is resuming...
+[124436.454880] iwlwifi 0000:05:00.0: WRT: Failed to set DRAM buffer for alloc id 1, ret=-1
+[124436.454882] iwlwifi 0000:05:00.0: WRT: Failed to set DRAM buffer for alloc id 2, ret=-1
+[124436.454883] iwlwifi 0000:05:00.0: WRT: Failed to set DRAM buffer for alloc id 3, ret=-1
+[124436.468476] [drm] reserve 0x400000 from 0xf43f800000 for PSP TMR
+[124436.498677] nvme nvme0: 15/0/0 default/read/poll queues
+[124436.558305] amdgpu 0000:06:00.0: amdgpu: RAS: optional ras ta ucode is not available
+[124436.567992] amdgpu 0000:06:00.0: amdgpu: RAP: optional rap ta ucode is not available
+[124436.567993] amdgpu 0000:06:00.0: amdgpu: SECUREDISPLAY: securedisplay ta ucode is not available
+[124436.567996] amdgpu 0000:06:00.0: amdgpu: SMU is resuming...
+[124436.568036] amdgpu 0000:06:00.0: amdgpu: dpm has been disabled
+[124436.569107] amdgpu 0000:06:00.0: amdgpu: SMU is resumed successfully!
+[124436.569674] [drm] DMUB hardware initialized: version=0x0101001F
+[124436.731251] usb 1-3: reset high-speed USB device number 2 using xhci_hcd
+[124436.731283] usb 3-3: reset high-speed USB device number 2 using xhci_hcd
+[124436.761267] ata2: SATA link down (SStatus 0 SControl 300)
+[124436.761413] ata1: SATA link down (SStatus 0 SControl 300)
+[124436.766704] [drm] kiq ring mec 2 pipe 1 q 0
+[124436.770211] [drm] VCN decode and encode initialized successfully(under DPG Mode).
+[124436.770259] [drm] JPEG decode initialized successfully.
+[124436.770446] amdgpu 0000:06:00.0: amdgpu: ring gfx uses VM inv eng 0 on hub 0
+[124436.770448] amdgpu 0000:06:00.0: amdgpu: ring comp_1.0.0 uses VM inv eng 1 on hub 0
+[124436.770449] amdgpu 0000:06:00.0: amdgpu: ring comp_1.1.0 uses VM inv eng 4 on hub 0
+[124436.770449] amdgpu 0000:06:00.0: amdgpu: ring comp_1.2.0 uses VM inv eng 5 on hub 0
+[124436.770450] amdgpu 0000:06:00.0: amdgpu: ring comp_1.3.0 uses VM inv eng 6 on hub 0
+[124436.770450] amdgpu 0000:06:00.0: amdgpu: ring comp_1.0.1 uses VM inv eng 7 on hub 0
+[124436.770451] amdgpu 0000:06:00.0: amdgpu: ring comp_1.1.1 uses VM inv eng 8 on hub 0
+[124436.770451] amdgpu 0000:06:00.0: amdgpu: ring comp_1.2.1 uses VM inv eng 9 on hub 0
+[124436.770452] amdgpu 0000:06:00.0: amdgpu: ring comp_1.3.1 uses VM inv eng 10 on hub 0
+[124436.770452] amdgpu 0000:06:00.0: amdgpu: ring kiq_2.1.0 uses VM inv eng 11 on hub 0
+[124436.770453] amdgpu 0000:06:00.0: amdgpu: ring sdma0 uses VM inv eng 0 on hub 1
+[124436.770453] amdgpu 0000:06:00.0: amdgpu: ring vcn_dec uses VM inv eng 1 on hub 1
+[124436.770454] amdgpu 0000:06:00.0: amdgpu: ring vcn_enc0 uses VM inv eng 4 on hub 1
+[124436.770454] amdgpu 0000:06:00.0: amdgpu: ring vcn_enc1 uses VM inv eng 5 on hub 1
+[124436.770455] amdgpu 0000:06:00.0: amdgpu: ring jpeg_dec uses VM inv eng 6 on hub 1
+[124436.994994] usb 3-4: reset full-speed USB device number 3 using xhci_hcd
+[124437.162163] PM: hibernation: Basic memory bitmaps freed
+[124437.162168] OOM killer enabled.
+[124437.162169] Restarting tasks ... done.
+[124437.168031] Bluetooth: hci0: Device revision is 0
+[124437.168037] Bluetooth: hci0: Secure boot is enabled
+[124437.168038] Bluetooth: hci0: OTP lock is enabled
+[124437.168039] Bluetooth: hci0: API lock is enabled
+[124437.168039] Bluetooth: hci0: Debug lock is disabled
+[124437.168040] Bluetooth: hci0: Minimum firmware build 1 week 10 2014
+[124437.168041] Bluetooth: hci0: Bootloader timestamp 2019.40 buildtype 1 build 38
+[124437.168048] Bluetooth: hci0: Found device firmware: intel/ibt-0041-0041.sfi
+[124437.168146] Bluetooth: hci0: Boot Address: 0x100800
+[124437.168147] Bluetooth: hci0: Firmware Version: 91-12.22
+[124437.421296] PM: hibernation: hibernation exit
+[124437.428288] audit: type=1131 audit(1650983877.103:545): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=NetworkManager-dispatcher comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[124437.444680] filter_write: 5 callbacks suppressed
+[124437.444682] msr: Write to unrecognized MSR 0xc0010064 by amdctl (pid: 162395).
+[124437.444686] msr: See https://git.kernel.org/pub/scm/linux/kernel/git/tip/tip.git/about for details.
+[124437.459410] audit: type=1130 audit(1650983877.133:546): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-hibernate comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[124437.459417] audit: type=1131 audit(1650983877.133:547): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-hibernate comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[124437.565129] enp4s0: 0xffffb59f803a5000, 7c:8a:e1:a7:55:d9, IRQ 94
+[124437.648256] iwlwifi 0000:05:00.0: WRT: Failed to set DRAM buffer for alloc id 1, ret=-1
+[124437.648266] iwlwifi 0000:05:00.0: WRT: Failed to set DRAM buffer for alloc id 2, ret=-1
+[124437.648268] iwlwifi 0000:05:00.0: WRT: Failed to set DRAM buffer for alloc id 3, ret=-1
+[124437.784272] smpboot: CPU 2 is now offline
+[124437.860449] smpboot: CPU 3 is now offline
+[124437.939455] smpboot: CPU 4 is now offline
+[124438.073208] smpboot: CPU 5 is now offline
+[124438.119909] smpboot: CPU 6 is now offline
+[124438.159824] smpboot: CPU 7 is now offline
+[124438.233169] smpboot: CPU 8 is now offline
+[124438.276475] smpboot: CPU 9 is now offline
+[124438.321453] Bluetooth: hci0: Waiting for firmware download to complete
+[124438.321993] Bluetooth: hci0: Firmware loaded in 1126909 usecs
+[124438.322017] Bluetooth: hci0: Waiting for device to boot
+[124438.350005] Bluetooth: hci0: Device booted in 27351 usecs
+[124438.350016] Bluetooth: hci0: Found Intel DDC parameters: intel/ibt-0041-0041.ddc
+[124438.356006] Bluetooth: hci0: Applying Intel DDC parameters completed
+[124438.364092] Bluetooth: hci0: Firmware timestamp 2022.12 buildtype 1 build 41819
+[124438.398001] smpboot: CPU 10 is now offline
+[124438.442842] smpboot: CPU 11 is now offline
+[124441.178761] wlan0: authenticate with 94:83:c4:00:41:54
+[124441.178784] wlan0: bad VHT capabilities, disabling VHT
+[124441.178785] wlan0: 80 MHz not supported, disabling VHT
+[124441.181641] wlan0: send auth to 94:83:c4:00:41:54 (try 1/3)
+[124441.213129] wlan0: authenticated
+[124441.214526] wlan0: associate with 94:83:c4:00:41:54 (try 1/3)
+[124441.231004] wlan0: RX AssocResp from 94:83:c4:00:41:54 (capab=0x431 status=0 aid=2)
+[124441.241433] wlan0: associated
+[124441.365657] IPv6: ADDRCONF(NETDEV_CHANGE): wlan0: link becomes ready
+[124441.426453] audit: type=1130 audit(1650983881.100:548): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=NetworkManager-dispatcher comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[124451.429058] audit: type=1131 audit(1650983891.103:549): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=NetworkManager-dispatcher comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[124452.659724] audit: type=1100 audit(1650983892.333:550): pid=163140 uid=1000 auid=1000 ses=2 msg='op=PAM:unix_chkpwd acct="jiankunli" exe="/usr/bin/unix_chkpwd" hostname=? addr=? terminal=? res=success'
+[124467.191588] audit: type=1100 audit(1650983906.866:551): pid=163142 uid=1000 auid=1000 ses=2 msg='op=PAM:authentication grantors=pam_faillock,pam_permit,pam_faillock acct="jiankunli" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/6 res=success'
+[124467.195398] audit: type=1101 audit(1650983906.870:552): pid=163142 uid=1000 auid=1000 ses=2 msg='op=PAM:accounting grantors=pam_unix,pam_permit,pam_time acct="jiankunli" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/6 res=success'
+[124467.196900] audit: type=1110 audit(1650983906.870:553): pid=163142 uid=1000 auid=1000 ses=2 msg='op=PAM:setcred grantors=pam_faillock,pam_permit,pam_faillock acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/6 res=success'
+[124467.201967] audit: type=1105 audit(1650983906.876:554): pid=163142 uid=1000 auid=1000 ses=2 msg='op=PAM:session_open grantors=pam_systemd_home,pam_limits,pam_unix,pam_permit acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/6 res=success'
+
